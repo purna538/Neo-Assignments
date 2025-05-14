@@ -1,0 +1,77 @@
+# ✅ Sprint Testing Checklist – Login Feature
+
+This document outlines the sprint testing checklist for a **Login Feature** as part of Agile & Scrum Week 2 assignment.
+
+---
+
+## 🔹 1. Requirement Review
+- [ ] Review user stories and acceptance criteria for login feature  
+- [ ] Confirm inputs (email/username, password) and expected behavior  
+- [ ] Validate error messages and edge cases listed in user story  
+- [ ] Clarify dependencies (e.g., API, backend, database)  
+
+---
+
+## 🔹 2. Test Planning
+- [ ] Identify test scenarios (positive and negative cases)  
+- [ ] Write test cases for functional, UI, security, and performance  
+- [ ] Review test cases with Product Owner or Scrum Team  
+- [ ] Add test cases to the sprint board (e.g., Jira, Trello)  
+
+---
+
+## 🔹 3. Environment Setup
+- [ ] Confirm test environment is stable and up-to-date  
+- [ ] Ensure test data (valid/invalid users) is prepared  
+- [ ] Verify API endpoints and database access  
+
+---
+
+## 🔹 4. Functional Testing
+- [ ] Login with valid username and password  
+- [ ] Login with invalid username and/or password  
+- [ ] Check field validations (empty inputs, invalid email format)  
+- [ ] Verify forgot password link works  
+- [ ] Test login button functionality and form submission  
+
+---
+
+## 🔹 5. UI/UX Testing
+- [ ] Check layout consistency across devices/browsers  
+- [ ] Verify placeholder text, button labels, and icons  
+- [ ] Ensure error messages are user-friendly and correctly placed  
+
+---
+
+## 🔹 6. Security Testing
+- [ ] Test for SQL injection in input fields  
+- [ ] Check password is masked while typing  
+- [ ] Validate password not stored or visible in browser cache  
+- [ ] Attempt brute force login to ensure rate-limiting or lockout  
+
+---
+
+## 🔹 7. API Testing
+- [ ] Send login request with valid/invalid data  
+- [ ] Verify response codes (200, 401, 400)  
+- [ ] Confirm token/session creation on successful login  
+
+---
+
+## 🔹 8. Regression Testing
+- [ ] Ensure login does not break existing functionality  
+- [ ] Test navigation to login from different parts of the app  
+
+---
+
+## 🔹 9. Exploratory Testing
+- [ ] Perform ad-hoc testing with unexpected inputs or actions  
+- [ ] Test login with network delay or slow performance  
+
+---
+
+## 🔹 10. Test Reporting & Review
+- [ ] Log defects with clear steps and screenshots  
+- [ ] Track testing progress in daily standups  
+- [ ] Update test cases based on feedback/changes  
+- [ ] Participate in sprint review/demo and share test results  
