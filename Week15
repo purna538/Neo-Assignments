@@ -1,0 +1,22 @@
+// Status code is 200
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+// Status text is OK
+pm.test("Status text is OK", function () {
+    pm.expect(pm.response.status).to.eql("OK");
+});
+
+// Response time under 800ms
+pm.test("Response time < 800ms", function () {
+    pm.expect(pm.response.responseTime).to.be.below(800);
+});
+
+// Body is JSON and has expected fields
+pm.test("Body has userId and title", function () {
+    const json = pm.response.json();
+    pm.expect(json).to.have.property("userId");
+    pm.expect(json).to.have.property("title");
+    pm.expect(json.title).to.be.a("string").and.not.empty;
+});
